@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellence Assured Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Excellence Assured</h1>
+    </header>
+
+    <main>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://res.cloudinary.com/dertpfbtv/image/upload/v1682114364/blurring-lines-between-sci-fi-and-reality-why-ai-needs-responsible-policy-intervention_qdvyc4.jpg" alt="Slide 1">
+                    <span class="swiper-slide-text">Learn from Secondary Level to Postgraduate level with our comprehensive courses.</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://res.cloudinary.com/dertpfbtv/image/upload/v1682114550/regent-university-commencement-hero-1760x990_wqa9bv.jpg" alt="Slide 2">
+                    <span class="swiper-slide-text">Learn from Secondary Level to Postgraduate level with our comprehensive courses.</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://res.cloudinary.com/dertpfbtv/image/upload/v1682093330/iStock-1146418040_wajxoq.jpg" alt="Slide 3">
+                    <span class="swiper-slide-text">Learn from Secondary Level to Postgraduate level with our comprehensive courses.</span>
+                </div>
+            </div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <section class="education-levels">
+            <a href="secondary.html">Secondary Level</a>
+            <a href="university.html">University Level</a>
+            <a href="postgraduate.html">Postgraduate</a>
+        </section>
+
+        <!-- Add a button linking to the courses.html file -->
+        <section class="courses-button">
+            <a href="courses.html"><button>View All Courses</button></a>
+        </section>
+    </main>
+
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // Auto play
+            autoplay: {
+                delay: 5000, // 5 seconds
+            },
+            
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
